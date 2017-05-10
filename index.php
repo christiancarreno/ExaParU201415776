@@ -7,10 +7,10 @@
  </head>
 <body>
  <center> 
-  <img src="images/imagenuno.png "> 
+  <img src="images/imagenuno.png"> 
  </center> 
-<table align="center" style='border: inset 0pt' >
-    <td><table  align="center" style='border: inset 0pt'>
+<table align="center">
+    <td><table  align="center">
       <tr>
         <th>For IT scientists</th>
       </tr>
@@ -31,8 +31,8 @@
       // output data of each row
       while($row = $result->fetch_assoc()) {?>      
           <tr>      
-      		   <td style='border: inset 0pt' > <img   src=<?php echo $row['imagen_servicio']?>> </td>
-       		   <td style='border: inset 0pt' ><?php echo $row['nombre_servicio']?> <br><?php  echo $row['descripcion_servicio']?></td>
+      		   <td> <img src=<?php echo $row['imagen_servicio']?>> </td>
+       		   <td><?php echo $row['nombre_servicio']?> <br><?php  echo $row['descripcion_servicio']?></td>
           </tr>
      <?php }
   } else {
@@ -63,8 +63,8 @@
       // output data of each row
       while($row = $result->fetch_assoc()) {?>
            <tr>
-        		   <td style='border: inset 0pt' > <img   src=<?php echo $row['imagen_servicio']?>> </td>
-       		   <td style='border: inset 0pt' ><?php echo $row['nombre_servicio']?> <br><?php  echo $row['descripcion_servicio']?></td>
+        		   <td> <img src=<?php echo $row['imagen_servicio']?>> </td>
+       		   <td><?php echo $row['nombre_servicio']?> <br><?php  echo $row['descripcion_servicio']?></td>
            </tr>
      <?php }
   } else {
@@ -76,7 +76,7 @@
 </td>
 </table> 
 <center> 
-<img src="images/imagendos.png" border=0> 
+<img src="images/imagendos.png"> 
 </center> 
  </body>
  </html>
