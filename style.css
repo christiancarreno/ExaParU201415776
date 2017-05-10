@@ -65,8 +65,8 @@ table {
 	word-wrap: break-word;
 }
 
-th {
-	
+td {
+	padding: 2px 40px;
 }
 
 th, td {
