@@ -25,7 +25,8 @@
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
   }
-  $sql = "SELECT * from servicios s where s.codigo_servicio = 1  union all SELECT * from servicios s where s.codigo_servicio = 2 union all SELECT * from servicios s where s.codigo_servicio = 3   ";
+  $sql = "SELECT * from servicios s where s.codigo_servicio = 1 union all SELECT * from servicios s 
+  where s.codigo_servicio = 2 union all SELECT * from servicios s where s.codigo_servicio = 3";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
       // output data of each row
@@ -57,7 +58,8 @@
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
   }
-  $sql = "SELECT * from servicios s where s.codigo_servicio = 4  union all SELECT * from servicios s where s.codigo_servicio = 5 union all SELECT * from servicios s where s.codigo_servicio = 6   ";
+  $sql = "SELECT * from servicios s where s.codigo_servicio = 4  union all SELECT * from servicios s 
+  where s.codigo_servicio = 5 union all SELECT * from servicios s where s.codigo_servicio = 6";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
       // output data of each row
